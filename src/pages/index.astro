@@ -1,0 +1,41 @@
+---
+// const pageTitle = "Home Page";
+
+// import Footer from "../components/Footer.astro";
+// import Navigation from "../components/Navigation.astro";
+// import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+// import "../styles/global.css";
+
+const pageTitle = "ホームページ";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>私の素晴らしいブログのサブタイトル</h2>
+</BaseLayout>
+
+<!-- <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <Navigation />
+    <Header />
+    <h1>{pageTitle}</h1>
+    <Footer />
+    <script>
+      document.querySelector(".hamburger")?.addEventListener("click", () => {
+        document.querySelector(".nav-links")?.classList.toggle("expanded");
+      });
+
+      import "../scripts/menu.js";
+    </script>
+  </body>
+</html> -->
