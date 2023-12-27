@@ -6,12 +6,14 @@
 // import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 // import "../styles/global.css";
-
+import Greeting from "../components/Greeting.jsx";
 const pageTitle = "ホームページ";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>私の素晴らしいブログのサブタイトル</h2>
+  <!-- <Greeting messages={["どうも", "こんにちは", "初めまして", "ようこそ"]} /> -->
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
 
 <!-- <html lang="ja">
